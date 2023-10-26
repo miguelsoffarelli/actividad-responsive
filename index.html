@@ -5,17 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #6c757d;">
+    <!-- <nav class="navbar navbar-expand-lg" style="background-color: #6c757d;">
         <a class="navbar-brand mx-3" href="#" style="color: white;">LOREM IPSUM</a>
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between">
               <li class="nav-item mx-5">
@@ -27,29 +22,73 @@
               <li class="nav-item mx-5">
                 <a class="nav-link disabled" aria-disabled="true" style="color: #b0b4b2;">Amet</a>
               </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link opciones" aria-current="page" href="#" style="color: white;">Opciones</a>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             </form>
           </div>
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-      </nav>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #6c757d;">
+        <a class="navbar-brand" mx-3" href="#" style="color: white;">LOREM IPSUM</a>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">dolor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">sit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">amet</a>
+              </li>
+            </ul>
       <main>
         <div class="container d-grid justify-content-center">
             <div class="row pt-5">
                 <h3 class="title">Lorem ipsum...</h3>
             </div>
             <div class="row mb-5">
-                <div class="slider-frame">
-                    <ul>
-                        <li id="li-1"><h5>Accumsan sit amet nulla facilisi morbi tempus.</h5></li>
-                        <li id="li-2"><h5>Phasellus vestibulum lorem sed risus ultricies tristique.</h5></li>
-                        <li id="li-3"><h5>Pulvinar elementum integer enim neque.</h5></li>
-                    </ul>
-                </div>
+                  <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <h4>Mollis nunc sed id semper risus in hendrerit gravida.</h4>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>Sagittis orci a scelerisque purus semper eget duis.</h4>
+                      </div>
+                      <div class="carousel-item">
+                        <h4>Aliquam faucibus purus in massa tempor nec feugiat nisl pretium.</h4>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row m-1">
             <div class="col-3">
                 <ul>
                     <li class="border rounded">
@@ -66,33 +105,26 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-3">
-                <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                     <p class="lorem-ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                </div>
-                <div class="row">
                     <p class="lorem-ipsum">
                         Accumsan sit amet nulla facilisi morbi tempus. Malesuada bibendum arcu vitae elementum curabitur. 
                         At auctor urna nunc id cursus metus aliquam. Egestas dui id ornare arcu odio ut. Cras adipiscing enim eu turpis. 
                         Massa sapien faucibus et molestie ac. Egestas pretium aenean pharetra magna ac. 
                         Tempus imperdiet nulla malesuada pellentesque elit eget gravida. 
                     </p>
-                </div>
-                <div class="row">
                     <p class="lorem-ipsum">
                         Sem viverra aliquet eget sit amet tellus cras adipiscing. 
                         Mollis nunc sed id semper risus in hendrerit gravida. Vitae purus faucibus ornare suspendisse sed nisi lacus. 
                         Sagittis orci a scelerisque purus semper eget duis. Aliquam ultrices sagittis orci a scelerisque purus semper eget. 
                         Turpis egestas sed tempus urna et. Phasellus vestibulum lorem sed risus ultricies tristique.
                     </p>
-                </div>
             </div>
-            <div class="col-3">
-                <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                     <p class="lorem-ipsum">
                         Facilisis gravida neque convallis a. Nec feugiat nisl pretium fusce. Eros donec ac odio tempor orci dapibus. 
                         Magna eget est lorem ipsum dolor. Dui faucibus in ornare quam viverra orci sagittis. 
@@ -101,43 +133,35 @@
                         Lectus magna fringilla urna porttitor rhoncus dolor purus. Convallis a cras semper auctor neque. 
                         Neque volutpat ac tincidunt vitae semper.
                     </p>
-                </div>
-                <div class="row">
                     <p class="lorem-ipsum">
                         Lacus viverra vitae congue eu. Nullam eget felis eget nunc. Viverra nam libero justo laoreet sit amet cursus sit amet. 
                         Amet dictum sit amet justo donec enim. Cursus euismod quis viverra nibh cras. 
                         Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. 
                         Pulvinar elementum integer enim neque. Nec feugiat in fermentum posuere urna nec.
                     </p>
-                </div>
-                <div class="row">
                     <p class="lorem-ipsum">
                         Tortor condimentum lacinia quis vel eros donec. Nibh sed pulvinar proin gravida hendrerit lectus a. 
                         Duis convallis convallis tellus id interdum velit laoreet id donec. Sit amet facilisis magna etiam. 
                         Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. 
                         Aliquam faucibus purus in massa tempor nec feugiat nisl pretium.
                     </p>
-                </div>
             </div>
-            <div class="col-3">
-                <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                     <p class="lorem-ipsum">
                         Accumsan in nisl nisi scelerisque eu ultrices vitae. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum 
                         arcu vitae. A diam maecenas sed enim ut sem viverra aliquet. In egestas erat imperdiet sed euismod nisi porta lorem. 
                         Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Egestas dui id ornare arcu odio ut. 
                         Blandit massa enim nec dui nunc mattis enim.
                     </p>
-                </div>
-                <div class="row">
                     <p class="lorem-ipsum">
                         Potenti nullam ac tortor vitae purus. Et odio pellentesque diam volutpat. Pellentesque id nibh tortor id aliquet 
                         lectus proin nibh nisl. Viverra maecenas accumsan lacus vel facilisis volutpat est velit. 
                         Eget velit aliquet sagittis id consectetur. Neque viverra justo nec ultrices.
                     </p>
-                </div>
             </div>
         </div>
       </main>
 </body>
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
