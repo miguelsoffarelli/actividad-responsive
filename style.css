@@ -4,9 +4,38 @@
     padding: 0;
 }
 
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+nav a {
+    color: white !important;
+}
+
+.navbar-nav li {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+::placeholder { color: gray !important;}
+
+.opciones {
+    display: none !important;
+    cursor: pointer !important;
+}
+
+.search-1 {
+    display: unset !important;
+}
+
+.search-2 {
+    display: none !important;
+}
+
 li{
     list-style-type: none;
-    
     display: flex;
     align-items: center;
 }
@@ -24,6 +53,14 @@ nav{
     display: flex;
 }
 
+.nav-link.disabled {
+    color: #b0b4b2 !important;
+}
+
+.optionsBtn {
+    cursor: pointer;
+}
+
 .title {
     text-align: center;
     margin-bottom: 0.5em;
@@ -32,31 +69,80 @@ nav{
 .options{
     text-decoration: underline;
     color: black;
-    margin: 1em;
-    
+    margin: 1em; 
 }
 
-.lorem-ipsum{
+.random-text{
     background-color: #f8f9fa;
 }
 
-/* @media (max-width: 992px) {
-    nav {
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        justify-content: space-between !important;
+@media (max-width:992px) {
+    .optionsBtn {
+        display: unset !important;
     }
-    .container-fluid {
-        justify-content: flex-end !important;
-    }
-    .navbar-toggler {
-        display: flex !important;
-        
-    }
-} 
 
-@media (min-width: 992px) {
-    .opciones {
+    .navbar-nav li {
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+    .search-1 {
         display: none !important;
     }
-} */
+
+    .search-2 {
+        display: unset !important;
+        margin-top: 0.3em;
+    }
+
+    .lgOptions {
+        display: none !important;
+    }
+
+    .smallOptions {
+        margin-top: 0.3em;
+        display: none !important;
+        z-index: 14;
+        position: absolute;
+        width: 100%;
+    }
+
+    .smallOptions ul {
+        padding: 0 !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .showOptions {
+        display: unset !important;
+    }
+
+    .smallOptions ul li {
+        width: 77%;
+        background-color: white;
+    } 
+}
+
+@media (min-width:992px) {
+    .smallOptions {
+        display: none !important;
+    }
+
+    .optionsBtn {
+        display: none !important;
+    }
+}
+
+@media (max-width:576px) {
+    main {
+        padding: 0.2em;
+    }
+
+    .smallOptions ul li {
+        width: 95%;
+        background-color: white;
+    }
+}
